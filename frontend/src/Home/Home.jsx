@@ -11,7 +11,7 @@
 //     fetchProducts();
 //   },[])
 //   async function fetchProducts(){
-//     await axios.get("http://localhost:4001/api/product")
+//     await axios.get("https://book-srore.onrender.com/api/product")
 //       .then((res)=>{
 //         console.log(res)
 //         setProducts(res.data)
@@ -27,7 +27,7 @@
 //       return 
 //     }
 //     try{
-//       await axios.post("http://localhost:4001/api/cart/add",{productId},{
+//       await axios.post("https://book-srore.onrender.com/api/cart/add",{productId},{
 //         headers:{Authorization:`Bearer ${user.token}`}
 //       })
 //         .then((res)=>{
@@ -74,7 +74,7 @@
 
 //     function fetchBooks(selectedCategory) {
 //         axios
-//             .get(`http://localhost:4001/api/books?category=${selectedCategory}`)
+//             .get(`https://book-srore.onrender.com/api/books?category=${selectedCategory}`)
 //             .then((res) => {
 //                 setBooks(res.data); // Update state with books
 //             })
@@ -138,7 +138,7 @@
 
 //     function fetchBooks(selectedCategory) {
 //         axios
-//             .get(`http://localhost:4001/api/books?category=${selectedCategory}`)
+//             .get(`https://book-srore.onrender.com/api/books?category=${selectedCategory}`)
 //             .then((res) => {
 //                 setBooks(res.data); // Update state with books
 //             })
@@ -163,7 +163,7 @@
 
 //         try {
 //             await axios.post(
-//                 "http://localhost:4001/api/cart/add",
+//                 "https://book-srore.onrender.com/api/cart/add",
 //                 { productId: bookId },
 //                 { headers: { Authorization: `Bearer ${user.token}` } }
 //             );
@@ -272,7 +272,7 @@
 //     }, [category]);
 
 //     function fetchBooks(selectedCategory) {
-//         let url = "http://localhost:4001/api/books"; // Default: fetch all books
+//         let url = "https://book-srore.onrender.com/api/books"; // Default: fetch all books
 //         if (selectedCategory) {
 //             url += `?category=${selectedCategory}`; // Fetch by category if selected
 //         }
@@ -299,7 +299,7 @@
 
 //         try {
 //             await axios.post(
-//                 "http://localhost:4001/api/cart/add",
+//                 "https://book-srore.onrender.com/api/cart/add",
 //                 { productId: bookId },
 //                 { headers: { Authorization: `Bearer ${user.token}` } }
 //             );
@@ -435,7 +435,7 @@
 //     }, [category]);
 
 //     function fetchBooks(selectedCategory) {
-//         let url = "http://localhost:4001/api/books";
+//         let url = "https://book-srore.onrender.com/api/books";
 //         if (selectedCategory) {
 //             url += `?category=${selectedCategory}`;
 //         }
@@ -462,7 +462,7 @@
 
 //         try {
 //             await axios.post(
-//                 "http://localhost:4001/api/cart/add",
+//                 "https://book-srore.onrender.com/api/cart/add",
 //                 { productId: bookId },
 //                 { headers: { Authorization: `Bearer ${user.token}` } }
 //             );
@@ -594,7 +594,7 @@ export default function Home() {
     }, [category]);
 
     function fetchBooks(selectedCategory) {
-        let url = "http://localhost:4001/api/books";
+        let url = "https://book-srore.onrender.com/api/books";
         if (selectedCategory) {
             url += `?category=${selectedCategory}`;
         }
@@ -621,7 +621,7 @@ export default function Home() {
 
         try {
             await axios.post(
-                "http://localhost:4001/api/cart/add",
+                "https://book-srore.onrender.com/api/cart/add",
                 { productId: bookId },
                 { headers: { Authorization: `Bearer ${user.token}` } }
             );

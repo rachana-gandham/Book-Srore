@@ -12,7 +12,7 @@
 //     }
 //     // function addProduct(e) {
 //     //     e.preventDefault()
-//     //     axios.post("http://localhost:4001/api/product/add", formData, {
+//     //     axios.post("https://book-srore.onrender.com/api/product/add", formData, {
 //     //         headers: { Authorization: `Bearer ${user.token}` }
 //     //     })
 //     //         .then((res) => {
@@ -34,7 +34,7 @@
 //             return;
 //         }
     
-//         axios.post("http://localhost:4001/api/product/add", formData, {
+//         axios.post("https://book-srore.onrender.com/api/product/add", formData, {
 //             headers: { Authorization: `Bearer ${user.token}` }
 //         })
 //         .then((res) => {
@@ -146,7 +146,7 @@ export default function AddProduct() {
     }
 
     axios
-      .post("http://localhost:4001/api/product/add", formData, {
+      .post("https://book-srore.onrender.com/api/product/add", formData, {
         headers: { Authorization: `Bearer ${user.token}` },
       })
       .then((res) => {

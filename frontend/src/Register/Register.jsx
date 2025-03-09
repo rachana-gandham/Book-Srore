@@ -16,7 +16,7 @@
 //     function handleSubmit(e) {
 //         e.preventDefault();
 //         console.log(formData);
-//         axios.post("http://localhost:4001/api/auth/signup", formData)
+//         axios.post("https://book-srore.onrender.com/api/auth/signup", formData)
 //             .then((res) => {
 //                 console.log("response from register", res);
 //                 localStorage.setItem("token", res.data.token);
@@ -134,7 +134,7 @@ export default function Register() {
         console.log(formData);
 
         axios
-            .post("http://localhost:4001/api/auth/signup", formData)
+            .post("https://book-srore.onrender.com/api/auth/signup", formData)
             .then((res) => {
                 console.log("response from register", res);
 

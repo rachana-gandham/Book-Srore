@@ -19,7 +19,7 @@
 //             return;
 //         }
 
-//         axios.get("http://localhost:4001/api/product/seller", {
+//         axios.get("https://book-srore.onrender.com/api/product/seller", {
 //             headers: { Authorization: `Bearer ${user.token}` }
 //         })
 //         .then(res => setProducts(res.data))
@@ -36,8 +36,8 @@
 //         e.preventDefault();
 
 //         const url = editingProduct 
-//             ? `http://localhost:4001/api/product/update/${editingProduct._id}`
-//             : "http://localhost:4001/api/product/add";
+//             ? `https://book-srore.onrender.com/api/product/update/${editingProduct._id}`
+//             : "https://book-srore.onrender.com/api/product/add";
 
 //         const method = editingProduct ? "put" : "post";
 
@@ -56,7 +56,7 @@
 //     // Delete product
 //     function handleDelete(productId) {
 //         if (window.confirm("Are you sure you want to delete this product?")) {
-//             axios.delete(`http://localhost:4001/api/product/delete/${productId}`, {
+//             axios.delete(`https://book-srore.onrender.com/api/product/delete/${productId}`, {
 //                 headers: { Authorization: `Bearer ${user.token}` }
 //             })
 //             .then(() => {
@@ -164,7 +164,7 @@
 //     // Function to fetch the seller's products from the backend
 //     const fetchSellerProducts = async () => {
 //         try {
-//             const response = await axios.get("http://localhost:4001/api/product/seller", {
+//             const response = await axios.get("https://book-srore.onrender.com/api/product/seller", {
 //                 headers: {
 //                     Authorization: `Bearer ${user.token}`,
 //                 },
@@ -178,7 +178,7 @@
 //     // Function to handle the delete button click
 //     const handleDelete = async (productId) => {
 //         try {
-//             await axios.delete(`http://localhost:4001/api/product/${productId}`, {
+//             await axios.delete(`https://book-srore.onrender.com/api/product/${productId}`, {
 //                 headers: {
 //                     Authorization: `Bearer ${user.token}`,
 //                 },
@@ -256,7 +256,7 @@ export default function Dashboard() {
     // Function to fetch the seller's products from the backend
     const fetchSellerProducts = async () => {
         try {
-            const response = await axios.get("http://localhost:4001/api/product/seller", {
+            const response = await axios.get("https://book-srore.onrender.com/api/product/seller", {
                 headers: {
                     Authorization: `Bearer ${user.token}`,
                 },
@@ -270,7 +270,7 @@ export default function Dashboard() {
     // Function to handle the delete button click
     const handleDelete = async (productId) => {
         try {
-            await axios.delete(`http://localhost:4001/api/product/${productId}`, {
+            await axios.delete(`https://book-srore.onrender.com/api/product/${productId}`, {
                 headers: {
                     Authorization: `Bearer ${user.token}`,
                 },
