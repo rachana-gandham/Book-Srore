@@ -1,0 +1,29 @@
+# Node.js
+*node_modules/
+npm-debug.log
+yarn-error.log
+.env
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE or editor specific files
+.vscode/
+.idea/
+*.swp
+
+# Coverage directory for testing
+coverage/
+
+# Miscellaneous files
+.eslintcache
+.parcel-cache
+.next/

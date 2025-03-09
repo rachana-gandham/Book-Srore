@@ -1,0 +1,82 @@
+/* Make the body take up the full height of the screen */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .checkout-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .payment-heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-spacing: 10px;
+  }
+  
+  table td {
+    padding: 5px 10px;
+  }
+  
+  table input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .total-price-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .my-4 {
+    margin-top: 20px;
+  }
+  

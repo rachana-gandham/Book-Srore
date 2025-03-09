@@ -1,0 +1,116 @@
+.home-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://t4.ftcdn.net/jpg/06/42/33/73/360_F_642337303_RRftmunXi0RBj8rWNQVg88Kj6h4PeslQ.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.home-content {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    text-align: center;
+}
+
+.category-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-right: 10px;
+}
+
+.category-select {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    appearance: none;
+}
+
+/* SWIPER CONTAINER */
+.books-swiper {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* BOOK CARD */
+.book-card {
+    width: 220px; /* Ensure all book cards have the same width */
+    height: 400px; /* Set a fixed height so all cards remain the same */
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 1px 4px black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+
+/* BOOK IMAGE */
+.book-image {
+    width: 100%; /* Make the image take full width of the card */
+    height: 200px; /* Ensure a fixed height for all images */
+    object-fit: contain; /* Ensures the entire image is shown without cropping */
+    border-radius: 5px;
+}
+
+
+/* BOOK DETAILS */
+.book-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.book-description {
+    font-size: 13px;
+    color: #444;
+    text-align: left;  /* Align to left for better readability */
+    margin-top: 5px;
+    height: 60px; /* Set a fixed height to maintain uniformity */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." when text overflows */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limit to 3 lines */
+    -webkit-box-orient: vertical;
+}
+
+
+.book-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* ADD TO CART BUTTON */
+.add-to-cart-btn {
+    padding: 8px 12px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: darkblue;
+}
